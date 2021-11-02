@@ -36,6 +36,7 @@ export default function Classes() {
     const uri = process.env.REACT_APP_API;
 
     useEffect(() => {
+        console.log(uri);
         fetch(uri)
             .then(res => res.json())
             .then(
