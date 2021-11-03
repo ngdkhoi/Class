@@ -33,7 +33,7 @@ export default function Classes() {
     const [ClassList, setClassList] = useState([]);
     const [recordForEdit, setRecordForEdit] = useState(null);
     const [openPopup, setOpenPopup] = useState(false);
-    const uri = process.env.REACT_APP_API;
+    const uri = process.env;
 
     useEffect(() => {
         console.log(uri);
