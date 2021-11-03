@@ -36,7 +36,6 @@ export default function Classes() {
     const uri = process.env.NODE_ENV === "production" ? process.env.REACT_APP_API_PRO : process.env.REACT_APP_API_DEV;
 
     useEffect(() => {
-        console.log(uri);
         fetch(uri)
             .then(res => res.json())
             .then(
